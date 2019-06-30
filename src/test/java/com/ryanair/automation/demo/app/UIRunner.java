@@ -6,6 +6,6 @@ import org.junit.Test;
 public class UIRunner {
     @Test
     public void testApp() {
-        App.run("src/test/resources/com.ryanair.automation.demo.app/usercontroller.feature", "");
+        App.run("src/test/resources/com/ryanair/automation/demo/app/usercontroller.feature", "");
     }
 }
