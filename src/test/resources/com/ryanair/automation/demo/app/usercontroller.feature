@@ -1,12 +1,12 @@
 @UserController
-Feature: [Task 6 - Request chaining] Get users - OK tests
+Feature: Get users - OK tests
 
   Background:
     * url baseUrl
     * configure logPrettyRequest = true
     * configure logPrettyResponse = true
 
-  @Task6
+  @GetAllUsersOk
   Scenario: Get users - Ok test
     * def email = 'john_wick01@ryanair.com'
     * def name = 'John Wick'

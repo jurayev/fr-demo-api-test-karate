@@ -1,5 +1,5 @@
 @CreateNewBookingStep
-Feature: [Task 7 - Data tables] New user step
+Feature: New booking step
 
   Background:
     * url baseUrl
@@ -8,8 +8,8 @@ Feature: [Task 7 - Data tables] New user step
     * def getCurrentDate = read('classpath:js/getCurrentDate.js')
     * def format = 'yyyy-MM-dd'
 
-  @Task7
-  Scenario Outline: Create new bookin
+  @NewBooking
+  Scenario Outline: Create new booking
     Given path '/booking'
     And request
     """

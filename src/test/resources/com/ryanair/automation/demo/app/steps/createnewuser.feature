@@ -1,12 +1,12 @@
 @CreateNewUserStep
-Feature: [Task 6 - Request chaining] New user step
+Feature: New user step
 
   Background:
     * url baseUrl
     * configure logPrettyRequest = true
     * configure logPrettyResponse = true
 
-  @Task6
+  @NewUser
   Scenario: Create new user
     Given path '/user'
     And request
