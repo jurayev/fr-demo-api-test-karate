@@ -9,7 +9,7 @@ Feature: [Task 7 - Data tables] New user step
     * def format = 'yyyy-MM-dd'
 
   @Task7
-  Scenario Outline: Create new booking
+  Scenario Outline: Create new bookin
     Given path '/booking'
     And request
     """
