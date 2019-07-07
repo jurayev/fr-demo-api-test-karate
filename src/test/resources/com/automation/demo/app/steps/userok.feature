@@ -26,7 +26,7 @@ Feature: Get users - ok step
     And match each response[*].bookings == '#array'
 
   @UserOkJsonBody
-  Scenario: [Task 4 - Contract validation] Get all users - verify response body from Json array
+  Scenario: Get all users - verify response body from Json array
     Given path '/user/all'
     When method GET
     Then status 200

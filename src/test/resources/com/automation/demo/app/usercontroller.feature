@@ -8,8 +8,8 @@ Feature: Get users - OK tests
 
   @GetAllUsersOk
   Scenario: Get users - Ok test
-    * def email = 'john_wick01@ryanair.com'
+    * def email = 'john_wick01@gmail.com'
     * def name = 'John Wick'
-    * def user = call read('classpath:com/ryanair/automation/demo/app/steps/createnewuser.feature')
-    * call read('classpath:com/ryanair/automation/demo/app/steps/userok.feature')
+    * def user = call read('classpath:com/automation/demo/app/steps/createnewuser.feature')
+    * call read('classpath:com/automation/demo/app/steps/userok.feature')
 

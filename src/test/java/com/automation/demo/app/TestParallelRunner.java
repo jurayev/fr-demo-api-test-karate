@@ -1,4 +1,4 @@
-package com.ryanair.automation.demo.app;
+package com.automation.demo.app;
 import com.intuit.karate.cucumber.CucumberRunner;
 import com.intuit.karate.cucumber.KarateStats;
 import cucumber.api.CucumberOptions;
@@ -16,7 +16,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
-@CucumberOptions(tags = {"~@ignore"})
+@CucumberOptions(tags = {"~@ignore", "@UserController"})
 public class TestParallelRunner {
 
     @BeforeClass
