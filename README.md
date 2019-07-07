@@ -15,18 +15,16 @@ Software to be pre-installed :
 * JDK 8 - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 * Maven - latest version here https://maven.apache.org/download.cgi
 
-[Project docs](https://confluence.ryanair.com:8444/display/QA/API+Testing)
-
 [Endpoints docs](http://127.0.0.1:8900/swagger-ui.html)
 
 How to run this suite:
 - usercontroller tests:
 ```sh
-mvn -am -e -DfailIfNoTests=false clean test -Dlevel=debug -DTest=com.ryanair.automation.demo.app.TestParallelRunner "-Dcucumber.options=--tags @UserController"
+mvn -am -e -DfailIfNoTests=false clean test -Dlevel=debug -DTest=TestParallelRunner "-Dcucumber.options=--tags @UserController"
 ```
 - bookingcontroller tests: 
 ```sh
-mvn -am -e -DfailIfNoTests=false clean test -Dlevel=debug -DTest=com.ryanair.automation.demo.app.TestParallelRunner "-Dcucumber.options=--tags @BookingController"
+mvn -am -e -DfailIfNoTests=false clean test -Dlevel=debug -DTest=TestParallelRunner "-Dcucumber.options=--tags @BookingController"
 ```
 
 ## Getting reports
@@ -40,7 +38,6 @@ Example of generated report:
 
 ## Regular Expressions
 
-[docs](https://confluence.ryanair.com:8444/display/QA/Task+1+-+Regular+Expressions)
 1. All 3 letter words and 3 digit numbers - https://regex101.com/r/zL2Lol/1
 2. Cat and cat https://regex101.com/r/3573hH/1
 3. cat, rat and bat words but not cats, rats, hat, hats, brat https://regex101.com/r/o5SuT1/1
@@ -51,7 +48,6 @@ Example of generated report:
 
 ## JsonPath
 
-[docs](https://confluence.ryanair.com:8444/display/QA/Task+2+-+JSON+Path)
 1. Search all flights:   `$..flights`
 2. Search flights on 2018/7/22:  `$..dates[?(@.dateOut=~/2018-07-22.*/)].flights`
 3. Search flights with amount greater than 100:  `$..fares[?(@.amount>100)]`
