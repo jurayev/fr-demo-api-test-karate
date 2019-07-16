@@ -37,4 +37,4 @@ Example of generated report:
 ![](cucumber_report.png)
 
 ## License
-Project is licensed under [MIT](https://github.com/YuriyJurayev/fr-demo-api-test-karate/blob/master/LICENSE)
+Project is licensed under [MIT](https://github.com/jurayev/fr-demo-api-test-karate/blob/master/LICENSE)
